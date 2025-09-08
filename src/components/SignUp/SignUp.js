@@ -128,7 +128,7 @@ function SignUp() {
                   onChange={(e) => handleNameChange(e)}
                   value={name}
                   placeholder="NAME"
-                />
+                /><br/>
                 <small>{nameError ? nameError : ""}</small>
               </div>
               <div>
@@ -138,6 +138,7 @@ function SignUp() {
                   value={email}
                   placeholder="EMAIL"
                 />
+                <br/>
                 <small>{emailError ? emailError : ""}</small>
               </div>
               <div style={{ position: "relative" }}>
@@ -165,6 +166,7 @@ function SignUp() {
                   value={userName}
                   placeholder="USERNAME"
                 />
+                <br/>
                 <small>{userNameError ? userNameError : ""}</small>
               </div>
               <div>
@@ -174,6 +176,7 @@ function SignUp() {
                   value={phoneNumber}
                   placeholder="PHONE NUMBER"
                 />
+                <br/>
                 <p style={{ marginLeft: "2rem" }}>
                   {phoneNumberError ? phoneNumberError : ""}
                 </p>
