@@ -112,7 +112,9 @@ function SignUp() {
   };
 
   const handleSubmit = () => {
-    navigate("/login")
+    if(!nameError && !userNameError && !emailError && !phoneNumberError && !confirmNewPasswordError && !newPasswordError){
+      navigate("/login")
+    }
   }
 
   return (
