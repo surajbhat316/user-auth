@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "./SignUp.module.css";
 import { LuEye } from "react-icons/lu";
 import { useNavigate } from "react-router";
+import "../../media/SignUp.css"
 
 function SignUp() {
   const [name, setName] = useState("");
@@ -122,7 +123,7 @@ function SignUp() {
       <div className={style.container}>
         <header>Create new Account</header>
         <main>
-          <form className={style.form_container}>
+          <form className={`${style.form_container} media_form`}>
             <div className={style.left}>
               <div>
                 <input
@@ -152,7 +153,7 @@ function SignUp() {
                 />
                 <LuEye
                   onClick={toggleInputTypeNewPassword}
-                  className={style.icon}
+                  className={`${style.icon} media_icon`}
                 />
                 <br />
 
@@ -192,7 +193,7 @@ function SignUp() {
                 />
                 <LuEye
                   onClick={toggleInputTypeConfirmNewPassword}
-                  className={style.icon}
+                  className={`${style.icon} media_icon`}
                 />
                 <br />
 
@@ -206,7 +207,7 @@ function SignUp() {
         </main>
 
         <footer>
-          <button onClick={handleSubmit}>Sign Up</button>
+          <button className="media_btn" onClick={handleSubmit}>Sign Up</button>
         </footer>
       </div>
     </div>

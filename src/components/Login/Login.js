@@ -3,7 +3,7 @@ import style from "../SignUp/SignUp.module.css";
 import styleLogin from "./Login.module.css";
 import { Link } from "react-router";
 import { LuEye } from "react-icons/lu";
-
+import "../../media/SignUp.css"
 export default function Login() {
 
     const [inputTypeConfirm, setInputTypeConfirm] = useState("password");
@@ -22,7 +22,7 @@ export default function Login() {
           <p style={{ fontSize: "20px" }}>Sign in to continue</p>
         </header>
 
-        <main>
+        <main className="media_main">
           <div className={styleLogin.container}>
             <input type="text" placeholder="USERNAME" />
 
@@ -34,7 +34,7 @@ export default function Login() {
           </div>
         </main>
 
-        <footer className={styleLogin.footer}>
+        <footer className={`${styleLogin.footer} media_footer`}>
           <button>login</button>
           <div>
             Don't have and account,
